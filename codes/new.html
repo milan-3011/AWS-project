@@ -1,0 +1,38 @@
+<button class="button">contact us</button>
+
+<style type="text/css">
+  .button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.button:before {
+  background-color: #333;
+  border-radius: 20px 0 0 20px;
+  left: -10px;
+}
+
+.button:after {
+  background-color: #333;
+  border-radius: 0 20px 20px 0;
+  right: -10px;
+}
+
+</style>

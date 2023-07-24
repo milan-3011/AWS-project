@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>AWS Practice Project</title>
+    <link rel="icon" type="image/x-icon" href="awslogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  	<link rel="stylesheet" type="text/css" href="website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  </head>
+
+  <body>
+    <header class="sticky-top">
+      <div class="container-fluid" >
+        <div class="row" id="header">
+      	
+          <div class="col-sm-4" style="padding-left: 100px;">
+        		<h2>aws</h2>
+        	</div>
+
+          <div class="col-sm-8" style="font-size: 15px;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#" style="font-size:15px; color:white">Contact US</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light" ></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      Support
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      English
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Hindi</a>
+                      <a class="dropdown-item" href="#">Gujarati</a>
+                      <a class="dropdown-item" href="#">Tamil</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                      My account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    	<div class="container">        
+              			   <img src="LOGO.png" class="rounded-circle" alt="Cinque Terre" width="100" height="100"> 
+                      </div>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activities</a>
+                    </div>
+                  </li>
+                </ul>
+            
+                <a class="navbar-brand" href="#" style="font-size:15px; color: white;" id="signin">Sign in</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="badge badge-pill badge-primary" id="account" style="color: black; height: 25px; text-align: center; padding-top: 6px;background-color: orangered;">Create an AWS Account</span>
+         
+              </div>
+            </nav>
+      	 </div>
+        </div>
+      </div>
+    </header>
+
+
+      <div class="container-fluid">
+
+        <div class="row" style="background-color: white;" >
+          <div class="freetier">
+            AWS Free Tier
+          </div>
+        </div>
+
+        <div class="row" style="background-color: white;" id="tc">
+          <div class="mx-auto">
+            <ul class="nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;">overview</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+                Free Tier categories </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;">How to create an account</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+                Featured offers for business </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;">FAQs</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;">Terms and conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- just check fixed position,
+    and start new div now -->
+
+  <!-- check bootstrap, because second class not proper working on mobile web-->
+    
+    <div class="container-fluid" style="background: black;">
+      <div class="row">
+        <div class="col" id="first">
+          <h2><b>AWS Free Tier</b></h2>
+          <p>Gauin free, hands-on experince with the AWS-platform,<br>products and services</p>
+          <a href="#" style="text-decoration: none; color: skyblue;">Learn more about AWS Free Tier <i class="fa fa-info-circle" style="font-size:17px;color:skyblue"></i></a> <br>
+
+          <span class="badge badge-pill badge-primary" id="account" style="color: black; height: 25px; text-align: center; padding-top: 6px;background-color: orangered;">Create a free Account</span>
+        </div>
+
+        <div class="col-md-auto">
+          <div class="second my-3 mr-3">
+            <p style="color:orange;">FEATURED</p>
+            <h5 style="color:white;">Startups may be eligible for AWS <br>credits</h5>
+            <p style="color:white;">AWS Activate provides eligible startups with a host of<br> resorces, including free AW3S credits to spend on AWS<br> services, and AWS Support.</p>
+            <a href="#" style="color:white;"><u> Sign up for Activate Today ></u></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- now you have completed all things, now you need to make types of offers -->
+
+    <div class="container-fluid" style="background: linear-gradient(to bottom, white, transparent);" >
+      <div class="row"> 
+        <div class="col-sm-11" align="center" id="offers">
+          <h1>Types of Offers</h1>
+          <h6>Explore more than 100 products and start buildinfg on AWS usiong the Free Tier. Three different types of free offers are available<br>depending on the product used. Click icon below to explore our offers.</h6>
+          <div class="columns">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="55" height="55"><path d="M10.25 0h3.5a.75.75 0 0 1 0 1.5h-1v1.278a9.954 9.954 0 0 1 5.636 2.276L19.72 3.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.315 1.316A9.959 9.959 0 0 1 22 12.75c0 5.523-4.477 10-10 10s-10-4.477-10-10a9.959 9.959 0 0 1 2.535-6.654L3.22 4.78a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.335 1.334a9.958 9.958 0 0 1 5.635-2.276V1.5h-1a.75.75 0 0 1 0-1.5ZM12 21.25a8.5 8.5 0 1 0-.001-17.001A8.5 8.5 0 0 0 12 21.25Zm4.03-12.53a.75.75 0 0 1 0 1.06l-2.381 2.382a1.75 1.75 0 1 1-1.06-1.06l2.38-2.382a.75.75 0 0 1 1.061 0Z"></path></svg>
+
+            <div class="left">
+              <h4 style="color:#007FFF;">Free trials</h4>
+              <p>Short-term free trial offers start form the date  you activate a particular service</p>
+            </div>
+
+            <div class="center">
+              <ion-icon name="calendar-outline"></ion-icon> 
+              <h4 style="color:#007FFF;">12 months free</h4>
+              <p>Enjoy these offers forn 12-months following your initial sign-up date to AWS</p>
+            </div>
+
+            <div class="right">
+              <ion-icon name="infinite-outline"></ion-icon>
+              <h4 style="color:#007FFF;">Always free</h4>
+              <p>These free tier offgers do not expire and are available to all AWS customers</p>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+  <!-- now the time is services part -->
+
+    <div class="smallboxes" align="center" style="background: linear-gradient(to top, deepskyblue, transparent);"> 
+      <div class="container-fluid"> 
+        <div class="row"> 
+          <div class="col-12"> 
+            <h1 style="color:navy;">OUR SERVICES</h1> 
+            <h6 style="color:#48494B;">Providing cutting-edge digital technologies and speedy solutions to enable businesses<br>to redefine the next. Whatever your needs are, XDuce can help! Our services include:</h6>
+          </div> 
+        </div> 
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center" style="background-color:deepskyblue; padding-top: 40px;">
+      <div class="btn-group-1" role="group" aria-label="Button Group">
+        <button onclick="displayContent(1)" type="button" class="btn-1" id="btn-1"><b>Cloud Consulting</b></button>
+        <button onclick="displayContent(2)" type="button" class="btn-1" id="btn-2"><b>Enterprise App Development</b></button>
+        <button onclick="displayContent(3)" type="button" class="btn-1" id="btn-3"><b>Strategic Resourcing</b></button>
+        <button onclick="displayContent(4)" type="button" class="btn-1" id="btn-4"><b>Mobile App Development</b></button>
+        <button onclick="displayContent(5)" type="button" class="btn-1" id="btn-5"><b>Quality Engineering</b></button>
+        <button onclick="displayContent(6)" type="button" class="btn-1" id="btn-6"><b>Data Engineering</b></button>
+      </div>
+    </div>
+          
+    <div id="content">
+    </div>
+
+    <script type="text/javascript">
+      function displayContent(buttonId) 
+      {
+        var contentDiv = document.getElementById("content");
+        var content = "";
+  // Check the button ID and set the content accordingly
+        switch(buttonId) 
+
+        {
+          case 1:
+            content = `
+              <div class="main-box-1">
+                <img src="first.png" alt="Image 1" class="box-img-1" style="height:300px; width:380px;">
+                <div class="box-1">
+                  <h2 style="color:navy;"><b>Enterprise App Development</b></h2>
+                  <p>We’ll improve your business’s infrastructure by implementing scalable enterprise-grade technologies that will help you grow faster.</p>
+                  <ul>
+                    <li>Full Stack Development</li>
+                    <li>Cloud-Native App Development</li>
+                    <li>Mobile Apps Development</li>
+                    <li>Data Engineering and Analytics</li>
+                    <li>MVP Development</li>
+                    <li>Ecosystem Connectors</li>
+                  </ul>
+                </div>
+              </div>
+                `;
+            break;
+
+          case 2:
+            content = `
+              <div class="main-box-2">
+                <img src="second.png" alt="Image 1" class="box-img-2" style="height:300px; width:380px;">
+                <div class="box-2">
+                  <h2 style="color:navy;"><b>Cloud Consulting</b></h2>
+                  <p>Our consulting team works with clients and builds road maps that aid in the development of their digital transformation strategy.</p>
+                  <ul>
+                    <li>Cloud Architecture</li>
+                    <li>Application Modernization</li>
+                    <li>UI/UX Design</li>
+                    <li>Container Strategy</li>
+                    <li>Microservices</li>
+                    <li>DevOps and Automation</li>
+                  </ul>
+                </div>
+              </div>
+                `;
+            break;
+
+          case 3:
+            content = `
+              <div class="main-box-3">
+                <img src="third.png" alt="Image 1" class="box-img-3" style="height:300px; width:380px;">
+                <div class="box-3">
+                  <h2 style="color:navy;"><b>Strategic Resourcing</b></h2>
+                  <p>We create ground-breaking software solutions with intuitive design and smooth functionality. Our professionals work diligently and build strategies to ensure that your brand is properly represented.</p>
+                  <ul>
+                    <li>Permanent Recruitment</li>
+                    <li>Contractual Recruitment</li>
+                    <li>Staffing Partner to MSP</li>
+                  </ul>
+                </div>
+              </div>
+            `;
+            break;
+          
+          case 4:
+            content = `
+              <div class="main-box-4">
+                <img src="forth.png" alt="Image 1" class="box-img-4" style="height:300px; width:380px;">
+                <div class="box-4">
+                  <h2 style="color:navy;"><b>Mobile App Development</b></h2>
+                  <p>XDuce offers comprehensive industry expertise and follow a collaborative approach to deliver high-performance engineering services.</p>
+                  <ul>
+                    <li>Mobile Strategy and Consulting</li>
+                    <li>Native Application Development</li>
+                    <li>Hybrid Apps Development</li>
+                    <li>UI/UX Design</li>
+                    <li>IoT & Wearables</li>
+                    <li>Mobile Apps Testing</li>
+                  </ul>
+                </div>
+              </div>      `;
+            break;
+          
+          case 5:
+            content = `
+              <div class="main-box-5">
+                <img src="fifth.png" alt="Image 1" class="box-img-5" style="height:300px; width:380px;">
+                <div class="box-5">
+                  <h2 style="color:navy;"><b>Quality Engineeringng</b></h2>
+                  <p>We facilitate the development of applications requiring high usability, availability, security, and scalability thanks to our considerable experience in standard and core testing services. We also ensure that we use the most up-to-date state-of-the-art technology, allowing us to stay ahead of the curve.</p>
+                  <ul>
+                    <li>Functional Testing</li>
+                    <li>Performance Testing</li>
+                    <li>Test Automation</li>
+                    <li>Compatibility Testing</li>
+                    <li>Security Testing</li>
+                    <li>Mobile Testing</li>
+                  </ul>
+                </div>
+              </div>
+            `;
+            break;
+          
+          case 6:
+            content = `
+              <div class="main-box-6">
+                <img src="six.png" alt="Image 1" class="box-img-6" style="height:300px; width:380px;">
+                <div class="box-6">
+                  <h2 style="color:navy;"><b>Data Engineering</b></h2>
+                  <p>With our data re-engineering and migration services, you can ensure that your data management is risk-free by updating and integrating systems on a regular basis.</p>
+                  <ul>
+                    <li>Data Analytics Consulting</li>
+                    <li>Data Infrastructure</li>
+                    <li>Data Engineering and Migration</li>
+                    <li>Data Management</li>
+                    <li>Advance Analytics & Dashboards</li>
+                    <li>AI & ML</li>
+                  </ul>
+                </div>
+              </div>
+            `;
+            break;
+          
+          default:
+            content = "<p>Invalid Button</p>";
+        }
+
+  // Set the content of the div
+          contentDiv.innerHTML = content;
+      }
+      displayContent(1);
+    </script>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000" >
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleFade" data-slide-to="0" class="active" ></li>
+        <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+      </ol>
+    
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background: rgb(255,0,57); background: linear-gradient(90deg, rgba(255,0,57,0.8464635854341737) 0%, rgba(0,155,255,0.8856792717086834) 100%);" >
+          <div class="row justify-content-center">
+            <img class="d-block" src="curofirst.png" alt="First slide" style="width:500px; height:400px;">
+            <div class="slide-first" style="padding-top: 60px;">
+              <h2>Start Digital<br>Transformation</h2>
+              <p>Enterprise application development and legacy system modernization are two areas in which we excel, from ideating and developing strategies to maintaining agility at large. We partner with you at every step of your digital journey.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-item" style="background: rgb(0,155,255); background: linear-gradient(90deg, rgba(0,155,255,0.8856792717086834) 0%, rgba(255,0,57,0.8464635854341737) 100%);">
+          <div class="row justify-content-center">
+            <img class="d-block" src="curosec.png" alt="Second slide" style="width:500px; height:400px;">
+            <div class="slide-first" style="padding-top: 60px;">
+              <h2>Top strategic<br>Resourcing Service</h2>
+              <p style="width:600px">Our strategic resourcing service enables our partners to handle varying demands while minimizing overstaffing and onboarding risks. We provide the agility, experience, and flexibility your team requires to scale up and deliver on schedule at any point of the project. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+<!-- now mobile part start0 -->
+  
+    <div class="mobile">
+      <div class="mobotext">
+        <h2> We Promise. We Deliver.</h2>
+        <p>Are you looking for professionals to help you in the digital transformation process?
+          <br><br>
+          <b>We’re happy to share our services, which are just waiting to be implemented and help your business flourish.</b>
+          <br><br>
+          <button id="account" style="background-color:orangered; border-radius: 40px; color: white; border: 0; height:50px; cursor: pointer; padding-left: 40px; padding-right: 40px; text-align: center;">contact us</button>
+        </p>
+      </div>
+      <div class="moboimg">
+        <img src="mobile.png">
+      </div>
+    </div>
+
+    
+<!-- footer part start-->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+            <div id="mainftr">
+
+              <div id="ftrct" style="cursor: default;">
+                <div id="awslogo">
+                  <h1>aws</h1>
+                  <p style="width:220px">aws, a top Enterprise app development company offering innovative solutions for diverse industry verticals.</p>
+                  <a id="logos" href="https://www.facebook.com/amazonwebservices/"><i class="fa-brands fa-facebook"></i></i></a>
+                  <a id="logos" href="https://twitter.com/aws?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                  <a id="logos" href="https://www.linkedin.com/company/amazon-web-services/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a id="logos" href="https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg"><i class="fa-brands fa-youtube"></i></a>
+                  <a id="logos" href="https://www.instagram.com/amazonwebservices/?hl=en"><i class="fa-brands fa-instagram"></i></i></a>
+                  
+                </div>
+              </div>
+
+              <div id="ftrct">
+                <h3 style="cursor: default;"><b>Company</b></h3>
+                <ul>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Blogs</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+
+              <div id="ftrct">
+                <h3 style="cursor: default;"><b>Services</b></h3>
+                <ul>
+                  <li>IT & Cloud Consulting</li>
+                  <li>Enterprise Apps Development</li>
+                  <li>App Modernization</li>
+                  <li>Mobile App Development</li>
+                  <li>Data Engineering and Analytics</li>
+                  <li>Quality Engineering</li>
+                  <li>Cloud Native</li>
+                  <li>Digital Transformation</li>
+                  <li>Strategic Resourcing</li>
+                </ul>
+              </div>
+
+              <div id="ftrct" style="cursor: default;">
+                <h3 ><b>Contact Us</b></h3>
+                <ul>
+                  <li>510 Thornall St. Suite 375 Edison, NJ 08837</li>
+                  <li>Phone: +1 732-465-9100</li>
+                  <li>Email: USA.info@xduce.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
